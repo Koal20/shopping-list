@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Shopping Items" max_length="40" name="x_560823_shopping_shopping_items" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Item" max_length="125" name="item" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Purchased" max_length="40" name="purchased" type="boolean"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element attributes="encode_utf8=false" display="true" label="Store" max_length="32" name="store" reference="x_560823_shopping_store_name" type="reference"/>
+        <index name="index">
+            <element name="store"/>
+        </index>
+    </element>
+</database>
